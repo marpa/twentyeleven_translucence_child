@@ -15,3 +15,192 @@ Template: twentyeleven
 -------------------------------------------------------------- */
 
 @import url( ../twentyeleven/style.css );
+
+#site-title {
+	margin-right: 270px;
+	padding: 1em 0 0;
+}
+#site-description {
+	color: #7a7a7a;
+	font-size: 14px;
+	margin: 0 270px 2em 0;
+}
+/* Search Form */
+#branding #searchform {
+	position: absolute;
+	top: 2em;
+	right: 7.6%;
+	text-align: right;
+}
+#branding .with-image #searchform {
+	top: auto;
+	bottom: -27px;
+}
+#branding .with-image #searchform {
+	top: auto;
+	bottom: -27px;
+}
+/* =widget navigation
+-------------------------------------------------------------- */	
+
+#secondary ul li,
+#secondary ul ul li, 
+#secondary ul ol li {
+	list-style-type: none;
+}
+
+
+.widget_pages li.page_item ul.children,
+.widget_nav_menu li.menu-item ul.sub-menu,
+.pagenav li.page_item ul.children {
+	display: none;
+}
+
+#entry-author-pages .pagenav li.page_item ul.children {
+	display: block;
+}
+
+.widget_pages li.current_page_item > ul.children, 
+.widget_nav_menu li.current-menu-item > ul.sub-menu,
+.pagenav li.current_page_item > ul.children {
+	display: block;
+}
+
+.widget_pages li.current_page_ancestor > ul.children,
+.widget_nav_menu li.current-menu-ancestor > ul.sub-menu {
+	display: block;
+}
+
+#primary .widget_pages li.current_page_item,
+#primary .widget_categories li.current-cat,
+#primary .widget_nav_menu li.current-menu-item {
+	background-color: rgba(249, 249, 249, 0.4);
+	padding-left: 3px;
+	padding-right: 3px;
+	border: 1px solid #CCCCCC;
+}
+
+#secondary .widget_pages li.current_page_item,
+#secondary .widget_pages li.current-cat,
+#secondary .widget_nav_menu li.current-menu-item {
+	background-color: rgba(249, 249, 249, 0.4);
+	padding: 3px;
+	border: 1px solid #CCCCCC;
+}
+
+#tertiary .widget_pages li.current_page_item,
+#tertiary .widget_pages li.current-cat,
+#tertiary .widget_nav_menu li.current-menu-item {
+	background-color: rgba(249, 249, 249, 0.4);
+	padding: 3px;
+	border: 1px solid #CCCCCC;
+}
+
+/* End widget navigation
+-------------------------------------------------------------- */	
+
+.entry-title {
+	color: #036;
+	font-size: 26px;
+	font-weight: normal;
+	line-height: 1.3em;
+	margin-bottom: 0;
+	display: block;
+	text-align: left;
+	text-shadow: #CCC 1px 1px 0.05em;
+	border-bottom: 1px solid #ccc;
+}
+
+.entry-title:hover {
+	border-bottom: 1px solid #036;
+}
+.entry-title,
+.entry-title a {
+	color: #036;
+	text-decoration: none;
+	display: block;
+}
+.entry-title a:hover,
+.entry-title a:focus,
+.entry-title a:active {
+	color: #036;	
+}
+.widget-title {
+	font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+	color: #000;
+	font-size: 18px;
+	font-variant: small-caps;
+	font-weight: normal;
+	padding-bottom: 3px;
+}
+.widget ul li {
+	color: #777;
+	font-size: 13px;
+	margin-left: 2px;
+}
+.widget a {
+	font-weight: normal;
+	text-decoration: none;
+}
+
+/* =2011 Translucence modfication to support sidebars on single pages
+----------------------------------------------- */
+
+.singular.right-sidebar #primary {
+	margin: 0 -26.4% 0 0;
+}
+
+.singular.left-sidebar #primary {
+	float: right;
+	margin: 0 0 0 -26.4%;
+	width: 100%;
+}
+
+.singular.left-sidebar #content {
+	margin: 0 7.6% 0 34%;
+	width: 58.4%;
+}
+
+.page-template-no-sidebar-page-php.singular.left-sidebar #content {
+	margin: 0 7.6% 0 7.6%;
+	width:85%;
+}
+
+.singular #primary {
+	margin: 0 -26.4% 0 0;
+}
+
+ 
+#nav-single {
+	display: none;
+}
+ 
+.singular .entry-header .entry-meta {
+	position: relative;
+}
+ 
+.singular .hentry {
+	padding: 0;
+}
+ 
+.singular .entry-header, .singular .entry-content, .singular footer.entry-meta, .singular #comments-title {
+	width: 100%;
+}
+ 
+.singular #content {
+	margin: 0 34% 0 7.6%;
+}
+
+.page-template-no-sidebar-page-php #content {
+	margin: 0 7.6% 0 7.6%;
+}
+ 
+.singular article .entry-title {
+	padding-top: 0;
+}
+ 
+.singular .entry-meta .edit-link a {
+	right: 0;
+	top: 0;
+	left: auto;
+}
