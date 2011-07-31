@@ -212,7 +212,7 @@ endif;
  */
  
 function twentyeleven_translucence_get_author_info() {
-  if ( get_the_author_meta( 'description' ) ) { // If a user has filled out their description, show a bio on their entries
+  if ( get_the_author_meta( 'description' ) && is_multi_author() ) { // If a user has filled out their description, show a bio on their entries
     ?>
     <div id="entry-author-info">
       <div id="author-avatar">
