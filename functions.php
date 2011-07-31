@@ -188,4 +188,47 @@ function twentyeleven_enqueue_color_scheme_blue( $color_scheme ) {
 		wp_enqueue_style( 'blue', get_stylesheet_directory_uri() . '/colors/blue.css', array(), null );
 }
 
+ /**
+ * Gets author(s) of a given post
+ *
+ * Referenced on single.php
+ *
+ * @since 2011 Translucence 1.0
+ * @return string markup with author info
+ */
+if ( ! function_exists( 'twentyeleven_translucence_get_author' ) ) :
+	function twentyeleven_translucence_get_author() {
+		$authors = twentyeleven_translucence_get_author_info();
+		return $authors;
+	}
+endif;
+
+ /**
+ * Gets info about author of a given post
+ *
+ *
+ * @since 2011 Translucence 1.0
+ * @return string markup with author info
+ */
+ 
+function twentyeleven_translucence_get_author_info() {
+  if ( get_the_author_meta( 'description' ) ) { // If a user has filled out their description, show a bio on their entries
+    ?>
+    <div id="entry-author-info">
+      <div id="author-avatar">
+        <?php echo get_avatar( get_the_author_meta( 'user_email' ), apply_filters( 'twentyten_author_bio_avatar_size', 60 ) ); ?>
+      </div><!-- #author-avatar -->
+      <div id="author-description">
+        <h2><?php printf( esc_attr__( 'About %s', '2011-translucence' ), get_the_author() ); ?></h2>
+        <?php the_author_meta( 'description' ); ?>
+        <div id="author-link">
+          <a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>">
+            <?php printf( __( 'View all posts by %s <span class="meta-nav">&raquo;</span>', '2011-translucence' ), get_the_author() ); ?>
+          </a>
+        </div><!-- #author-link	-->
+      </div><!-- #author-description -->
+    </div><!-- #entry-author-info -->
+    <?php
+  }
+}
 
