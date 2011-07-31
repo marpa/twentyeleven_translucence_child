@@ -40,6 +40,25 @@ Template: twentyeleven
 	top: auto;
 	bottom: -27px;
 }
+
+/* =Menu
+-------------------------------------------------------------- */
+
+#access ul li.current_page_item.page_item > a, 
+#access ul li.current_page_ancestor > a, 
+#access ul li.current-menu-ancestor > a, 
+#access ul li.current-menu-item > a, 
+#access ul li.current-menu-parent > a {
+	font-weight: normal;
+	background: #f9f9f9; /* Show a solid color for older browsers */
+	background: -moz-linear-gradient(#f9f9f9, #e5e5e5);
+	background: -o-linear-gradient(#f9f9f9, #e5e5e5);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f9f9f9), to(#e5e5e5)); /* Older webkit syntax */
+	background: -webkit-linear-gradient(#f9f9f9, #e5e5e5);
+	color: #373737;
+
+}
+
 /* =widget navigation
 -------------------------------------------------------------- */	
 
