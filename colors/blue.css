@@ -1,0 +1,125 @@
+/*
+	A blue color scheme for 2011 Translucence
+*/
+
+/* =Global
+----------------------------------------------- */
+
+body {
+	background-image: url(../images/background/bg-blue01.png);
+	background-color: #051E3C;
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-attachment: scroll;
+}
+#page {
+	background: #fff;
+}
+
+#primary {
+	background: #fff;
+}
+
+
+/* =Header
+----------------------------------------------- */
+
+#branding {
+	background-color: #051E3C;
+	border-top: 2px solid #fff;
+}
+#site-title a {
+	color: #fff;
+}
+#site-title a:hover,
+#site-title a:focus,
+#site-title a:active {
+	color: #CC9;
+}
+#site-description {
+	color: #CC9;
+}
+#branding #s {
+	background-color: #ddd;
+}
+
+
+/* =Menu
+----------------------------------------------- */
+
+#access {
+	background: #364559; /* Show a solid color for older browsers */
+	background: -moz-linear-gradient(#364559, #1F2732);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#364559), to(#1F2732)); /* older webkit syntax */
+	background: -webkit-linear-gradient(#364559, #1F2732);
+	border-bottom: 1px solid #222;
+}
+
+/* =Content
+----------------------------------------------- */
+
+
+
+/* =Status
+----------------------------------------------- */
+
+
+
+/* =Quote
+----------------------------------------------- */
+
+
+
+/* =Image
+----------------------------------------------- */
+
+
+
+/* =error404
+----------------------------------------------- */
+
+
+/* =Showcase
+----------------------------------------------- */
+
+
+
+
+/* =Attachments
+----------------------------------------------- */
+
+.image-attachment div.attachment {
+	background: #060606;
+	border-color: #222;
+}
+.image-attachment div.attachment a img {
+	border-color: #060606;
+}
+.image-attachment div.attachment a:focus img,
+.image-attachment div.attachment a:hover img,
+.image-attachment div.attachment a:active img {
+	border-color: #2c2c2c;
+	background: #0f0f0f;
+}
+
+
+/* =Widgets
+----------------------------------------------- */
+
+
+
+
+/* =Comments
+----------------------------------------------- */
+
+
+
+
+/* =Footer
+----------------------------------------------- */
+
+
+
+/* =Print
+----------------------------------------------- */
+

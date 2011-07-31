@@ -1,7 +1,35 @@
 <?php
 /**
  * Twenty Eleven Translucence functions and definitions
+ * 
+ * Notes from Twenty Eleven functions and definitions
+ * When using a child theme (see http://codex.wordpress.org/Theme_Development and
+ * http://codex.wordpress.org/Child_Themes), you can override certain functions
+ * (those wrapped in a function_exists() call) by defining them first in your child theme's
+ * functions.php file. The child theme's functions.php file is included before the parent
+ * theme's file, so the child theme functions would be used.
  *
+ * Functions that are not pluggable (not wrapped in function_exists()) are instead attached
+ * to a filter or action hook. The hook can be removed by using remove_action() or
+ * remove_filter() and you can attach your own function to the hook.
+ *
+ * We can remove the parent theme's hook only after it is attached, which means we need to
+ * wait until setting up the child theme:
+ *
+ * <code>
+ * add_action( 'after_setup_theme', 'my_child_theme_setup' );
+ * function my_child_theme_setup() {
+ *     // We are providing our own filter for excerpt_length (or using the unfiltered value)
+ *     remove_filter( 'excerpt_length', 'twentyeleven_excerpt_length' );
+ *     ...
+ * }
+ * </code>
+ *
+ * For more information on hooks, actions, and filters, see http://codex.wordpress.org/Plugin_API.
+ *
+ * @package WordPress
+ * @subpackage Twenty_Eleven
+ * @since Twenty Eleven 1.0
  */
 
 /**
@@ -150,4 +178,23 @@ function twentyeleven_posted_on() {
 		esc_html( get_the_author() )
 	);
 }
+
+add_filter( 'twentyeleven_color_schemes', 'twentyeleven_color_schemes_blue' );
+add_action( 'twentyeleven_enqueue_color_scheme', 'twentyeleven_enqueue_color_scheme_blue' );
+
+function twentyeleven_color_schemes_blue( $color_schemes ) {
+	$color_schemes['blue'] = array(
+		'value' => 'blue',
+		'label' => __( 'blue', 'twentyeleven' ),
+		'thumbnail' => get_stylesheet_directory_uri() . '/inc/images/blue.png',
+		'default_link_color' => '#003366',
+	);
+	return $color_schemes;
+}
+
+function twentyeleven_enqueue_color_scheme_blue( $color_scheme ) {
+	if ( 'blue' == $color_scheme )
+		wp_enqueue_style( 'blue', get_stylesheet_directory_uri() . '/colors/blue.css', array(), null );
+}
+
 
