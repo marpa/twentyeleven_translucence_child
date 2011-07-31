@@ -33,6 +33,15 @@
  */
 
 /**
+ * add functions that depend on plugins
+ */
+
+if (file_exists(dirname(__FILE__).'/functions-plugins.php')) {
+	require_once('functions-plugins.php');
+}
+
+
+/**
  * Styles the header image and text displayed on the blog
  *
  * @since Twenty Eleven 1.0
