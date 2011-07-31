@@ -30,6 +30,7 @@ function twentyeleven_posted_on() {
 	);
 
 	if (function_exists('coauthors_posts_links')) {
+		print ( __( '<span class="sep"> by </span>' ));
 		coauthors_posts_links();
 	} else {
 		the_author_posts_link();

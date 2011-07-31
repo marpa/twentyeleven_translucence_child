@@ -144,6 +144,36 @@ Template: twentyeleven
 .entry-title a:active {
 	color: #036;	
 }
+
+#entry-author-info {
+	border: 1px solid #CCCCCC;
+	clear: both;
+	font-size: 14px;
+	line-height: 20px;
+	margin: 24px 0;
+	overflow: hidden;
+	padding: 18px 20px;
+}
+#entry-author-info #author-avatar {
+	background: #fff;
+	border: 1px solid #e7e7e7;
+	float: left;
+	height: 60px;
+	margin: 0 -104px 0 0;
+	padding: 11px;
+}
+#entry-author-info #author-description {
+	float: left;
+	margin: 0 0 0 104px;
+}
+#entry-author-info h2 {
+	font-size: 100%;
+	font-weight: bold;
+	margin-bottom: 0;
+}
+
+
+
 .widget-title {
 	font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
 	color: #000;
