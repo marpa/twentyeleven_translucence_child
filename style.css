@@ -85,7 +85,6 @@ Template: twentyeleven
 	list-style-type: none;
 }
 
-
 .widget_pages li.page_item ul.children,
 .widget_nav_menu li.menu-item ul.sub-menu,
 .pagenav li.page_item ul.children {
@@ -194,8 +193,6 @@ Template: twentyeleven
 	font-weight: bold;
 	margin-bottom: 0;
 }
-
-
 
 .widget-title {
 	font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
