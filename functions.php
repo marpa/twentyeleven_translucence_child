@@ -170,22 +170,39 @@ function twentyeleven_comment( $comment, $args, $depth ) {
 	endswitch;
 }
 
-add_filter( 'twentyeleven_color_schemes', 'twentyeleven_color_schemes_blue' );
-add_action( 'twentyeleven_enqueue_color_scheme', 'twentyeleven_enqueue_color_scheme_blue' );
+add_filter( 'twentyeleven_color_schemes', 'twentyeleven_color_schemes_translucence' );
+add_action( 'twentyeleven_enqueue_color_scheme', 'twentyeleven_enqueue_color_scheme_translucence' );
 
-function twentyeleven_color_schemes_blue( $color_schemes ) {
+function twentyeleven_color_schemes_translucence( $color_schemes ) {
 	$color_schemes['blue'] = array(
 		'value' => 'blue',
-		'label' => __( 'blue', 'twentyeleven' ),
+		'label' => __( 'Blue', 'twentyeleven' ),
 		'thumbnail' => get_stylesheet_directory_uri() . '/inc/images/blue.png',
 		'default_link_color' => '#003366',
 	);
+	$color_schemes['gray-white'] = array(
+		'value' => 'gray-white',
+		'label' => __( 'Gray White', 'twentyeleven' ),
+		'thumbnail' => get_stylesheet_directory_uri() . '/inc/images/gray-white.png',
+		'default_link_color' => '#003366',
+	);
+	$color_schemes['white-gray'] = array(
+		'value' => 'white-gray',
+		'label' => __( 'White Gray', 'twentyeleven' ),
+		'thumbnail' => get_stylesheet_directory_uri() . '/inc/images/white-gray.png',
+		'default_link_color' => '#003366',
+	);	
 	return $color_schemes;
 }
 
-function twentyeleven_enqueue_color_scheme_blue( $color_scheme ) {
-	if ( 'blue' == $color_scheme )
+function twentyeleven_enqueue_color_scheme_translucence( $color_scheme ) {
+	if ( 'blue' == $color_scheme ) {
 		wp_enqueue_style( 'blue', get_stylesheet_directory_uri() . '/colors/blue.css', array(), null );
+	} else if ( 'gray-white' == $color_scheme ) {
+		wp_enqueue_style( 'gray-white', get_stylesheet_directory_uri() . '/colors/gray-white.css', array(), null );
+	} else if ( 'white-gray' == $color_scheme ) {
+		wp_enqueue_style( 'white-gray', get_stylesheet_directory_uri() . '/colors/white-gray.css', array(), null );
+	}
 }
 
  /**
