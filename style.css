@@ -207,14 +207,14 @@ Template: twentyeleven
 	font-size: 13px;
 	margin-left: 2px;
 }
-.widget a {
+.widget_pages a {
 	font-weight: normal;
 	text-decoration: none;
 	display: block;
 	padding: 3px;
 	border: 1px solid transparent;
 }
-.widget a:hover {
+.widget_pages a:hover {
 	border: 1px dotted #e7e7e7;
 	text-decoration: none;
 }
