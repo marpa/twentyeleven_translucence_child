@@ -213,6 +213,22 @@ Template: twentyeleven
 .widget a {
 	font-weight: normal;
 	text-decoration: none;
+	display: block;
+	padding: 3px;
+	border: 1px solid transparent;
+}
+.widget a:hover {
+	border: 1px dotted #e7e7e7;
+	text-decoration: none;
+}
+
+.tagcloud a {
+	display: inline;
+	padding: 1px;
+}
+
+.widget_categories {
+
 }
 
 /* =2011 Translucence modfication to support sidebars on single pages
