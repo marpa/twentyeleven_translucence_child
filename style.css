@@ -132,6 +132,12 @@ Template: twentyeleven
 	border: 1px solid #CCCCCC;
 }
 
+.widget ul li {
+	line-height: 1.3;
+	padding: 3px 0 3px 0;
+}
+
+
 /* End widget navigation
 -------------------------------------------------------------- */	
 
