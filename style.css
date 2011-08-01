@@ -59,6 +59,23 @@ Template: twentyeleven
 
 }
 
+/* =Content
+-------------------------------------------------------------- */
+
+#main {
+	padding: 0 0 0;
+}
+#primary {
+	padding-top: 20px;
+}
+.left-sidebar #secondary {
+	padding-top: 15px;
+}
+.right-sidebar #secondary {
+	padding-top: 15px;
+}
+
+
 /* =widget navigation
 -------------------------------------------------------------- */	
 
