@@ -180,6 +180,12 @@ function twentyeleven_color_schemes_translucence( $color_schemes ) {
 		'thumbnail' => get_stylesheet_directory_uri() . '/inc/images/blue.png',
 		'default_link_color' => '#003366',
 	);
+	$color_schemes['dark'] = array(
+		'value' => 'dark',
+		'label' => __( 'dark', 'twentyeleven' ),
+		'thumbnail' => get_stylesheet_directory_uri() . '/inc/images/dark.png',
+		'default_link_color' => '#FBEB74',
+	);
 	$color_schemes['gray-white'] = array(
 		'value' => 'gray-white',
 		'label' => __( 'Gray White', 'twentyeleven' ),
@@ -204,6 +210,16 @@ function twentyeleven_enqueue_color_scheme_translucence( $color_scheme ) {
 		wp_enqueue_style( 'white-gray', get_stylesheet_directory_uri() . '/colors/white-gray.css', array(), null );
 	}
 }
+
+/** Enqueue the stylesheet for the current color scheme into the child theme. */
+function twentyelevenchild_enqueue_color_scheme() {
+    $options = twentyeleven_get_theme_options();
+    $color_scheme = $options['color_scheme'];
+    if ( 'dark' == $color_scheme )
+        wp_enqueue_style( 'dark_child', get_stylesheet_directory_uri() . '/colors/dark.css', array(), null );
+    do_action( 'twentyelevenchild_enqueue_color_scheme', 'dark_child' );
+}
+add_action( 'wp_enqueue_scripts', 'twentyelevenchild_enqueue_color_scheme', 11);
 
  /**
  * Gets author(s) of a given post
