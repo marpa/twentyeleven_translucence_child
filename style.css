@@ -207,7 +207,12 @@ Template: twentyeleven
 .entry-title a:active {
 	color: #036;	
 }
-
+.singular .entry-title {
+	color: black;
+	font-size: 32px;
+	font-weight: normal;
+	line-height: 40px;
+}
 #entry-author-info {
 	border: 1px solid #CCCCCC;
 	clear: both;
