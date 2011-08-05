@@ -234,6 +234,9 @@ Template: twentyeleven
 	font-weight: bold;
 	margin-bottom: 0;
 }
+.entry-header .comments-link a {
+	top: .75em;
+}
 
 /* =2011 Translucence modfication to support sidebars on single pages
 ----------------------------------------------- */
