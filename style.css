@@ -74,6 +74,9 @@ Template: twentyeleven
 .right-sidebar #secondary {
 	padding-top: 15px;
 }
+.hentry, .no-results {
+	clear:both;
+}
 
 
 /* =widget navigation
@@ -304,3 +307,30 @@ Template: twentyeleven
 	top: 0;
 	left: auto;
 }
+
+/* RSS (syndication)
+-------------------------------------------------------------- */
+#syndication{
+	width: 100%; 
+	text-align: right;
+	font-size: 11px;
+	padding: 0px 0 10px 0;
+	white-space:nowrap;
+}
+
+#syndication span {
+	padding: 5px 2px 0 23px;
+	background: url(images/feed.png) no-repeat 0 1px;
+	border-bottom: none;
+}
+
+
+#syndication a.feed{
+	padding: 5px 2px 0px 23px;
+	background: url(images/feed.png) no-repeat 0 1px;
+	border-bottom: none;
+}
+
+/* End RSS (syndication)
+-------------------------------------------------------------- */
+
