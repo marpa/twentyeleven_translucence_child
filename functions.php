@@ -184,7 +184,7 @@ function twentyeleven_color_schemes_translucence( $color_schemes ) {
 		'value' => 'dark',
 		'label' => __( 'dark', 'twentyeleven' ),
 		'thumbnail' => get_stylesheet_directory_uri() . '/inc/images/dark.png',
-		'default_link_color' => '#FBEB74',
+		'default_link_color' => '#FFC',
 	);
 	$color_schemes['gray-white'] = array(
 		'value' => 'gray-white',
