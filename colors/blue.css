@@ -31,9 +31,9 @@ body {
 #site-title a {
 	color: #fff;
 }
-#site-title a:hover,
-#site-title a:focus,
-#site-title a:active {
+#branding #site-title a:hover,
+#branding #site-title a:focus,
+#branding #site-title a:active {
 	color: #CC9;
 }
 #site-description {
