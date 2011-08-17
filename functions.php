@@ -292,3 +292,32 @@ function twentyeleven_translucence_page_links($post) {
 	}
 }
 
+ /**
+ * Adds breadcrumbs to child pages
+ *
+ * Referenced on all page templates
+ *
+ * @since 2011 Translucence 1.0
+ * @return string link to parent page
+ */
+
+function twentyeleven_translucence_get_breadcrumbs($post) {
+
+	$parent_title = get_the_title($post->post_parent);
+	$parent_url = get_permalink($post->post_parent);
+	$post_title = get_the_title($post);
+
+	if ($parent_title != $post_title) { 
+		$breadcrumbs = "<div class='breadcrumbs'>";
+		$breadcrumbs .= "<a href='".$parent_url."'";
+		$breadcrumbs .= " title='".$parent_title ."'>".$parent_title."</a> &raquo; ";
+		$breadcrumbs .= get_the_title($post);
+		$breadcrumbs .= "</div>";
+	} else {
+		$breadcrumbs = null;
+	}
+
+	return $breadcrumbs;
+}
+
+

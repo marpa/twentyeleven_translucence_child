@@ -203,6 +203,12 @@ Template: twentyeleven
 .page-link a:hover {
     border: 1px solid #003366;
 }
+.breadcrumbs {
+    font-size: 10px;
+}
+.breadcrumbs a {
+    color: #003366;
+}
 .pagenav {
     background-color: #F9F9F9;
     color: #444444;

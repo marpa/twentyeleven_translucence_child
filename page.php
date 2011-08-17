@@ -16,7 +16,7 @@ get_header(); ?>
 
 		<div id="primary">
 			<div id="content" role="main">
-
+				<?php print twentyeleven_translucence_get_breadcrumbs($post); ?>
 				<?php the_post(); ?>
 
 				<?php get_template_part( 'content', 'page' ); ?>
