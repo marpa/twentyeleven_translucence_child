@@ -265,3 +265,30 @@ function twentyeleven_translucence_get_author_info() {
   }
 }
 
+/**
+ * Get links to sub or related pages
+ *
+ * To override this in a child theme, remove the filter and optionally add
+ * your own function tied to the wp_page_menu_args filter hook.
+ *
+ * @uses wp_list_pages() to get a list of related or sub pages
+ * @uses get_pages() to get child pages of $post
+ * @uses translucence_page_links_display() to show or hide page links based on document cookie
+ *
+ * @since 2011 Tranlucence 1.0
+ */
+function twentyeleven_translucence_page_links($post) {
+
+	if ($post->post_parent) {
+		$children = wp_list_pages("title_li=<h3>Related Pages </h3>&child_of=".$post->post_parent."&echo=0");
+		$num_children = get_pages("child_of=".$post->post_parent);
+	} else {
+		$children = wp_list_pages("title_li=<h3>Sub Pages</h2>&child_of=".$post->ID."&echo=0");
+		$num_children = get_pages("child_of=".$post->ID);
+	}
+								
+	if (count($num_children) > 1) {
+		print $children;
+	}
+}
+

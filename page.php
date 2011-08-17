@@ -20,7 +20,7 @@ get_header(); ?>
 				<?php the_post(); ?>
 
 				<?php get_template_part( 'content', 'page' ); ?>
-
+				<?php twentyeleven_translucence_page_links($post); ?>
 				<?php comments_template( '', true ); ?>
 
 			</div><!-- #content -->
