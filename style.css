@@ -216,6 +216,9 @@ Template: twentyeleven
 	font-weight: normal;
 	line-height: 40px;
 }
+.singular.page .hentry {
+	padding: 0 0 0;
+}
 #entry-author-info {
 	border: 1px solid #CCCCCC;
 	clear: both;
@@ -308,7 +311,7 @@ Template: twentyeleven
 	left: auto;
 }
 
-/* RSS (syndication)
+/* =RSS (syndication)
 -------------------------------------------------------------- */
 #syndication{
 	width: 100%; 
