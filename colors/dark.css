@@ -467,6 +467,59 @@ section.recent-posts .other-recent-posts .comments-link a:hover {
 	border-color: #333;
 }
 
+/* =page navigation
+-------------------------------------------------------------- */	
+.page-link {
+    color: #000;
+}
+.page-link a:link,
+.page-link a:visited {
+    background: #222;
+    color: #FFC;
+    border: 1px solid #2C2C2C;
+}
+.home .sticky .page-link a {
+    background: #222;
+}
+.page-link a:active,
+.page-link a:hover {
+    border: 1px solid #FFC;
+}
+.breadcrumbs {
+    font-size: 10px;
+}
+.breadcrumbs a {
+    color: #FFC;
+}
+.pagenav {
+    background-color: #2C2C2C;
+    color: #FFC;
+    border: 1px solid #2C2C2C;
+}
+.pagenav:hover {
+    background-color: #2C2C2C;
+}
+.pagenav a, .pagenav a:visited {
+    color: #FFC;
+}
+.pagenav .current_page_item a {
+    color: #333333;
+}
+.pagenav .current_page_item > ul.children a {
+    color: #FFC;
+}
+.pagenav a {
+    color: #FFC;
+}
+.pagenav .current_page_item a {
+    color: #ccc;
+}
+.pagenav .current_page_item > ul.children a {
+    color: #FFC;
+}
+
+/* End page navigation
+-------------------------------------------------------------- */
 
 /* =Comments
 ----------------------------------------------- */
@@ -595,6 +648,31 @@ li.bypostauthor a.comment-reply-link:active {
 #cancel-comment-reply-link:active,
 #cancel-comment-reply-link:hover {
 	color: #00b4cc;
+}
+/* =Categories and Tags
+-------------------------------------------------------------- */
+
+
+/* End Categories and Tags
+-------------------------------------------------------------- */
+.cat-links a {
+	color: #FFC;
+	background-color: #262626;
+	border: 1px solid #2C2C2C; 
+}
+.cat-links a:hover {
+	background-color: #262626;
+	border: 1px solid #FFC; 
+}
+.tag-links a { 
+	color: #FFC;
+    background-color: #262626; 
+    border: 1px solid #2C2C2C; 
+}
+.tag-links a:hover { 
+	color: #FFC;
+    background-color: #262626;
+    border: 1px solid #FFC; 
 }
 
 
