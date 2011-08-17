@@ -399,6 +399,13 @@ Template: twentyeleven
 #comments {
 	clear: both;
 }
+/* Comment Form */
+#respond {
+    width: 90%;
+}
+.commentlist {
+	width: 80%;
+}
 
 /* End Comments
 ----------------------------------------------- */
