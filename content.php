@@ -24,7 +24,7 @@
 			</div><!-- .entry-meta -->
 			<?php
 				/* translators: used between list items, there is a space after the comma */
-				$categories_list = get_the_category_list( __( ', ', 'twentyeleven' ) );
+				$categories_list = get_the_category_list( __( ' ', 'twentyeleven' ) );
 				if ( $categories_list ):
 			?>
 			<span class="cat-links">
@@ -58,7 +58,7 @@
 			<?php if ( 'post' == get_post_type() ) : // Hide category and tag text for pages on Search ?>
 			<?php
 				/* translators: used between list items, there is a space after the comma */
-				$tags_list = get_the_tag_list( '', __( ', ', 'twentyeleven' ) );
+				$tags_list = get_the_tag_list( '', __( ' ', 'twentyeleven' ) );
 				if ( $tags_list ):
 				if ( $show_sep ) : ?>
 			<span class="sep"> | </span>
