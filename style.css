@@ -164,13 +164,20 @@ Template: twentyeleven
 }
 .widget_pages a:hover {
 	background-color: rgba(249, 249, 249, 0.4);
-	border: 1px dotted #999999;
+	border: 1px solid #999999;
 	text-decoration: none;
 	-moz-border-radius: 3px;
     border-radius: 3px;
-
 }
-
+.widget_pages li.current_page_item a:hover,
+.widget_pages li.current-cat a:hover,
+.widget_nav_menu li.current-menu-item a:hover {
+	border: 1px solid transparent;
+}
+.widget_pages li.current_page_item > ul.children a:hover, 
+.widget_nav_menu li.current-menu-item > ul.sub-menu a:hover {
+	border: 1px solid #CCCCCC;
+}
 .tagcloud a {
 	display: inline;
 	padding: 1px;
@@ -252,7 +259,7 @@ Template: twentyeleven
 .pagenav .current_page_item > ul.children a {
     -moz-border-radius: 3px;
     border-radius: 3px;
-	border: 1px solid #ccc;
+	border: 1px solid transparent;
 }
 #content .pagenav h3 {
     margin-bottom: 5px;
@@ -261,14 +268,17 @@ Template: twentyeleven
     list-style: none;
     margin: 0px 0px 5px 1.5em;
 }
+.pagenav ul li {
+    list-style: none;
+    margin: 0px 2px 2px 0;
+}
+
 .pagenav .current_page_item {
     display: block;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
     padding: 3px;
-    border: 1px solid transparent;
-}
-.pagenav .current_page_item:hover {
-    display: block;
-    border: 1px solid transparent;
+    border: 1px solid #ccc;
 }
 .pagenav a {
     color: #003366;
