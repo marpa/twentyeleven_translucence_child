@@ -221,6 +221,44 @@ function twentyelevenchild_enqueue_color_scheme() {
 }
 add_action( 'wp_enqueue_scripts', 'twentyelevenchild_enqueue_color_scheme', 11);
 
+
+ /**
+ * Removes Twentyeleven default header images
+ *
+ *
+ * @since 2011 Translucence 1.0
+ */
+function twentyeleven_translucence_remove_twentyeleven_headers() {
+	unregister_default_headers(array('wheel', 'shore', 'trolley', 'pine-cone', 'chessboard', 'lanterns', 'willow', 'hanoi'));
+}
+add_action('after_setup_theme', 'twentyeleven_translucence_remove_twentyeleven_headers', 11);
+
+
+ /**
+ * Adds 2011 Translucence default header images
+ *
+ *
+ * @since 2011 Translucence 1.0
+ */
+
+function twentyeleven_translucence_default_headers() {
+	$header_dir = get_bloginfo('stylesheet_directory');
+	//printpre($header_dir);
+	register_default_headers( array(
+		'shore' => array (
+			'url' => "$header_dir/images/headers/shore.jpg",
+			'thumbnail_url' => "$header_dir/images/headers/shore-thumbnail.jpg",
+			'description' => __( 'Shore', 'twentyeleven_translucence' )
+		),
+		'pine-cone' => array(
+			'url' => "$header_dir/images/headers/pine-cone.jpg",
+			'thumbnail_url' => "$header_dir/images/headers/pine-cone-thumbnail.jpg",
+			'description' => __( 'Pine Cone', 'twentyeleven_translucence' )
+		)
+	) );
+}
+add_action('after_setup_theme', 'twentyeleven_translucence_default_headers', 11);
+
  /**
  * Gets author(s) of a given post
  *
@@ -320,4 +358,20 @@ function twentyeleven_translucence_get_breadcrumbs($post) {
 	return $breadcrumbs;
 }
 
+/*********************************************************
+ * debugging
+ *********************************************************/
+
+
+function printpre($array, $return=FALSE) {
+	ob_start();
+	print "\n<pre>";
+	print_r($array);
+	print "\n</pre>";
+	
+	if ($return)
+		return ob_get_clean();
+	else
+		ob_end_flush();
+}
 
