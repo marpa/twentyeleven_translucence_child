@@ -299,11 +299,8 @@ Template: twentyeleven
 	text-shadow: #CCC 1px 1px 0.05em;
 	border-bottom: 1px solid transparent;
 }
-
 .entry-title:hover {
 	border-bottom: 1px solid #036;
-
-
 }
 .entry-title,
 .entry-title a {
