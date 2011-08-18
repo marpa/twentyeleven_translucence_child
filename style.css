@@ -124,6 +124,9 @@ Template: twentyeleven
 	background-color: rgba(249, 249, 249, 0.4);
 	padding: 3px;
 	border: 1px solid #CCCCCC;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+
 }
 
 #tertiary .widget_pages li.current_page_item,
@@ -160,8 +163,12 @@ Template: twentyeleven
 	border: 1px solid transparent;
 }
 .widget_pages a:hover {
+	background-color: rgba(249, 249, 249, 0.4);
 	border: 1px dotted #999999;
 	text-decoration: none;
+	-moz-border-radius: 3px;
+    border-radius: 3px;
+
 }
 
 .tagcloud a {
@@ -212,28 +219,40 @@ Template: twentyeleven
 .pagenav {
     background-color: #F9F9F9;
     color: #444444;
-    width: 97%;
-    float: right;
+    width: 90%;
     
     font-size: 12px;
     list-style: none;
     border: 1px solid #CCCCCC;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
     padding: 10px;
 
-    margin-bottom: 15px;
+    margin: 0 0 20px 15px;
 }
 .pagenav:hover {
     background-color: rgba(249, 249, 249, 1);
 }
 .pagenav a, .pagenav a:visited {
     color: #003366;
+    display: block;
+    padding: 3px;
+    border: 1px solid transparent;
+}
+.pagenav a:hover {
+    color: #003366;
+    border: 1px solid #036;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-decoration: none;
 }
 .pagenav .current_page_item a {
     color: #333333;
 }
 .pagenav .current_page_item > ul.children a {
-    font-style: normal;
-    color: #003366;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+	border: 1px solid #ccc;
 }
 #content .pagenav h3 {
     margin-bottom: 5px;
@@ -244,7 +263,12 @@ Template: twentyeleven
 }
 .pagenav .current_page_item {
     display: block;
-    font-style: italic;
+    padding: 3px;
+    border: 1px solid transparent;
+}
+.pagenav .current_page_item:hover {
+    display: block;
+    border: 1px solid transparent;
 }
 .pagenav a {
     color: #003366;
@@ -252,10 +276,20 @@ Template: twentyeleven
 .pagenav .current_page_item a {
     color: #444444;
 }
+.pagenav .current_page_item a:hover {
+    color: #444444;
+    border: 1px solid transparent;
+}
 .pagenav .current_page_item > ul.children a {
     font-style: normal;
     color: #003366;
 }
+.pagenav .current_page_item > ul.children a:hover {
+    font-style: normal;
+    color: #003366;
+     border: 1px solid #036;
+}
+
 
 /* End page navigation
 -------------------------------------------------------------- */	
@@ -445,6 +479,8 @@ Template: twentyeleven
 	border: 1px solid #999;
 	cursor: pointer;
 	display: inline-block;
+    border-radius: 3px;
+	border: 1px solid #ccc;
 	margin: 2px 0.2em;
 	padding: 0.1em 0.2em;
 }
@@ -459,7 +495,9 @@ Template: twentyeleven
     border: 1px solid #CCCCCC;  
     font-weight: normal;
     cursor:pointer; 
-    display:inline-block; 
+    display:inline-block;
+    border-radius: 3px;
+	border: 1px solid #ccc;
     margin:2px 0.2em; padding:0.1em 0.2em;  
 }
 .tag-links a:hover {
