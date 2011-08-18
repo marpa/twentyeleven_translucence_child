@@ -42,6 +42,20 @@ if (file_exists(dirname(__FILE__).'/functions-plugins.php')) {
 
 
 /**
+ * Sets up defaults for child theme that are different from parent
+ *
+ * @uses set_post_thumbnail_size() To set a custom post thumbnail size.
+ *
+ * @since 2011 Translucence 1.0
+ */
+function twentyeleven_translucence_setup() {
+// 	define( 'HEADER_IMAGE_WIDTH', 950 );
+// 	define( 'HEADER_IMAGE_HEIGHT', 150 );
+}
+add_action( 'after_setup_theme', 'twentyeleven_translucence_setup' );
+
+
+/**
  * Styles the header image and text displayed on the blog
  *
  * @since Twenty Eleven 1.0
@@ -233,7 +247,6 @@ function twentyeleven_translucence_remove_twentyeleven_headers() {
 }
 add_action('after_setup_theme', 'twentyeleven_translucence_remove_twentyeleven_headers', 11);
 
-
  /**
  * Adds 2011 Translucence default header images
  *
@@ -254,7 +267,12 @@ function twentyeleven_translucence_default_headers() {
 			'url' => "$header_dir/images/headers/pine-cone.jpg",
 			'thumbnail_url' => "$header_dir/images/headers/pine-cone-thumbnail.jpg",
 			'description' => __( 'Pine Cone', 'twentyeleven_translucence' )
-		)
+		),
+		'midd-overview' => array(
+			'url' => "$header_dir/images/headers/midd-overview01.jpg",
+			'thumbnail_url' => "$header_dir/images/headers/midd-overview01-thumbnail.jpg",
+			'description' => __( 'Midd View', 'twentyeleven_translucence' )
+		)		
 	) );
 }
 add_action('after_setup_theme', 'twentyeleven_translucence_default_headers', 11);
