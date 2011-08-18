@@ -109,32 +109,15 @@ Template: twentyeleven
 	display: block;
 }
 
-#primary .widget_pages li.current_page_item,
-#primary .widget_categories li.current-cat,
-#primary .widget_nav_menu li.current-menu-item {
-	background-color: rgba(249, 249, 249, 0.4);
-	padding-left: 3px;
-	padding-right: 3px;
-	border: 1px solid #CCCCCC;
-}
-
-#secondary .widget_pages li.current_page_item,
-#secondary .widget_pages li.current-cat,
-#secondary .widget_nav_menu li.current-menu-item {
+.widget_pages li.current_page_item,
+.widget_pages li.current-cat,
+.widget_nav_menu li.current-menu-item {
 	background-color: rgba(249, 249, 249, 0.4);
 	padding: 3px;
 	border: 1px solid #CCCCCC;
     -moz-border-radius: 3px;
     border-radius: 3px;
 
-}
-
-#tertiary .widget_pages li.current_page_item,
-#tertiary .widget_pages li.current-cat,
-#tertiary .widget_nav_menu li.current-menu-item {
-	background-color: rgba(249, 249, 249, 0.4);
-	padding: 3px;
-	border: 1px solid #CCCCCC;
 }
 
 .widget ul li {
