@@ -295,17 +295,14 @@ Template: twentyeleven
 	margin-bottom: 0;
 	display: block;
 	text-align: left;
-	padding: 6px;
+	padding: 6px 6px 0 0;
 	text-shadow: #CCC 1px 1px 0.05em;
-	border: 1px solid transparent;
+	border-bottom: 1px solid transparent;
 }
 
 .entry-title:hover {
 	border-bottom: 1px solid #036;
-	border: 1px solid #ccc;
-	-moz-box-shadow: 0 0 2px #ccc;
-	-webkit-box-shadow: 0 0 2px #ccc;
-	box-shadow: 0 0 2px #E1E1E1;
+
 
 }
 .entry-title,
