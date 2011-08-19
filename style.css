@@ -162,13 +162,33 @@ Template: twentyeleven
 	border: 1px solid #CCCCCC;
 }
 .tagcloud a {
+	font-weight: normal;
 	display: inline;
 	padding: 1px;
+    border: 1px solid transparent;
+	-moz-border-radius: 3px;
+    border-radius: 3px;
+}
+.tagcloud a:hover {
+    border: 1px solid #036;
+    text-decoration:none;
+}
+.widget_categories a {
+	font-weight: normal;
+	display: inline;
+	padding: 1px;
+    border: 1px solid transparent;
+	-moz-border-radius: 3px;
+    border-radius: 3px;
+}
+.widget_categories a:hover {
+    border: 1px solid #036;
+    text-decoration:none;
+}
+.widget_categories .current-cat a {
+	border: 1px solid #ccc;
 }
 
-.widget_categories {
-
-}
 
 
 /* End widget navigation
