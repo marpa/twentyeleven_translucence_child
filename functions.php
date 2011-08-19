@@ -242,14 +242,14 @@ function twentyeleven_enqueue_color_scheme_translucence( $color_scheme ) {
 }
 
 /** Enqueue the stylesheet for the current color scheme into the child theme. */
-function twentyelevenchild_enqueue_color_scheme() {
+function twentyeleven_translucence_enqueue_color_scheme() {
     $options = twentyeleven_get_theme_options();
     $color_scheme = $options['color_scheme'];
     if ( 'dark' == $color_scheme )
         wp_enqueue_style( 'dark_child', get_stylesheet_directory_uri() . '/colors/dark.css', array(), null );
-    do_action( 'twentyelevenchild_enqueue_color_scheme', 'dark_child' );
+    do_action( 'twentyeleven_translucence_enqueue_color_scheme', 'dark_child' );
 }
-add_action( 'wp_enqueue_scripts', 'twentyelevenchild_enqueue_color_scheme', 11);
+add_action( 'wp_enqueue_scripts', 'twentyeleven_translucence_enqueue_color_scheme', 11);
 
 
  /**
