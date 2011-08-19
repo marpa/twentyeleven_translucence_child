@@ -192,6 +192,8 @@ Template: twentyeleven
     padding: 0.2em 0.4em;
     text-decoration: none;
     border: 1px solid #999;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
 }
 .home .sticky .page-link a {
     background: #f1f1f1;
