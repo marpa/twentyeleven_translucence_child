@@ -271,25 +271,8 @@ add_action('after_setup_theme', 'twentyeleven_translucence_remove_twentyeleven_h
  */
 
 function twentyeleven_translucence_default_headers() {
-	$header_dir = get_bloginfo('stylesheet_directory');
-	//printpre($header_dir);
-	register_default_headers( array(
-		'shore' => array (
-			'url' => "$header_dir/images/headers/shore.jpg",
-			'thumbnail_url' => "$header_dir/images/headers/shore-thumbnail.jpg",
-			'description' => __( 'Shore', 'twentyeleven_translucence' )
-		),
-		'pine-cone' => array(
-			'url' => "$header_dir/images/headers/pine-cone.jpg",
-			'thumbnail_url' => "$header_dir/images/headers/pine-cone-thumbnail.jpg",
-			'description' => __( 'Pine Cone', 'twentyeleven_translucence' )
-		),
-		'midd-overview' => array(
-			'url' => "$header_dir/images/headers/midd-overview01.jpg",
-			'thumbnail_url' => "$header_dir/images/headers/midd-overview01-thumbnail.jpg",
-			'description' => __( 'Midd View', 'twentyeleven_translucence' )
-		)		
-	) );
+	$twentyeleven_translucence_config = twentyeleven_translucence_add_config();
+	register_default_headers( $twentyeleven_translucence_config['custom_header'] );
 }
 add_action('after_setup_theme', 'twentyeleven_translucence_default_headers', 11);
 
