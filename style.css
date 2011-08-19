@@ -136,6 +136,9 @@ Template: twentyeleven
 	font-size: 13px;
 	margin-left: 2px;
 }
+.widget a {
+	font-weight: normal;
+}
 .widget_pages a {
 	font-weight: normal;
 	text-decoration: none;
