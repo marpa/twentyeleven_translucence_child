@@ -335,10 +335,10 @@ function twentyeleven_translucence_get_author_info() {
 function twentyeleven_translucence_page_links($post) {
 
 	if ($post->post_parent) {
-		$children = wp_list_pages("title_li=<h3>Related Pages </h3>&child_of=".$post->post_parent."&echo=0");
+		$children = wp_list_pages("title_li=<h3>".get_the_title($post->post_parent)."</h3>&child_of=".$post->post_parent."&echo=0");
 		$num_children = get_pages("child_of=".$post->post_parent);
 	} else {
-		$children = wp_list_pages("title_li=<h3>Sub Pages</h2>&child_of=".$post->ID."&echo=0");
+		$children = wp_list_pages("title_li=<h3>".get_the_title($post->post_parent)."</h3>&child_of=".$post->ID."&echo=0");
 		$num_children = get_pages("child_of=".$post->ID);
 	}
 								
