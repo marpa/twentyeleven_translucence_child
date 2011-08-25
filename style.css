@@ -433,6 +433,11 @@ li.current_page_item + ul.children {
  
 .singular article .entry-title {
 	padding-top: 0;
+	font-size: 26px;
+}
+
+.singular article .entry-title:hover {
+	border-bottom: 1px solid transparent;
 }
  
 .singular .entry-meta .edit-link a {
