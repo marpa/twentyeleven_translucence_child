@@ -271,8 +271,23 @@ add_action('after_setup_theme', 'twentyeleven_translucence_remove_twentyeleven_h
  */
 
 function twentyeleven_translucence_default_headers() {
-	$twentyeleven_translucence_config = twentyeleven_translucence_add_config();
-	register_default_headers( $twentyeleven_translucence_config['custom_header'] );
+	global $twentyeleven_translucence_config;
+	
+	$options = twentyeleven_get_theme_options();
+    $color_scheme = $options['color_scheme'];	
+	$config_color_schemes = $twentyeleven_translucence_config['color_schemes'];	
+	
+	foreach ($config_color_schemes as $config_color_scheme) {
+		if ($config_color_scheme['value'] == $color_scheme) {
+			$config_custom_header_ids = $twentyeleven_translucence_config['color_schemes'][$color_scheme]['custom_header'];
+			$config_custom_header_ids = explode (",", $config_custom_header_ids);
+			foreach ($config_custom_header_ids as $config_custom_header_id) {
+				$config_custom_headers[$config_custom_header_id] = $twentyeleven_translucence_config['custom_header'][$config_custom_header_id];
+			}
+		}
+	}
+	register_default_headers( $config_custom_headers );
+	//register_default_headers( $twentyeleven_translucence_config['custom_header'] );
 }
 add_action('after_setup_theme', 'twentyeleven_translucence_default_headers', 11);
 
