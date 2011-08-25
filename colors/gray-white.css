@@ -26,7 +26,7 @@ body {
 
 #branding {
 	background-color: transparent;
-	border-top: 2px solid #fff;
+	border-top: 1px solid transparent;
 }
 #site-title a {
 	color: #003366;
@@ -37,7 +37,7 @@ body {
 	color: #CC9;
 }
 #site-description {
-	color: #CC9;
+	color: #000;
 }
 #branding #s {
 	background-color: #ddd;
@@ -52,7 +52,11 @@ body {
 	background: -moz-linear-gradient(#CCCCCC, #E6E6E6);
 	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#CCCCCC), to(#E6E6E6)); /* older webkit syntax */
 	background: -webkit-linear-gradient(#CCCCCC, #E6E6E6);
-	border-bottom: 1px solid #222;
+	border-bottom: 1px solid #bbb;
+    -webkit-box-shadow: rgba(0, 0, 0, 0) 0px 1px 1px;
+    -moz-box-shadow: rgba(0, 0, 0, 0) 0px 1px 1px;
+    box-shadow: rgba(0, 0, 0, 0) 0px 1px 1px;
+
 }
 
 #access a {
