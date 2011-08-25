@@ -1,0 +1,126 @@
+/*
+	A transparent light color scheme for 2011 Translucence
+*/
+
+/* =Global
+----------------------------------------------- */
+
+body {
+	background-color: transparent;
+}
+#page {
+	background: transparent;
+}
+
+#primary {
+	background: transparent;
+}
+
+
+#branding {
+	background-color: transparent;
+	border-top: 2px solid #fff;
+}
+#site-title a {
+	color: #003366;
+}
+#site-title a:hover,
+#site-title a:focus,
+#site-title a:active {
+	color: #CC9;
+}
+#site-description {
+	color: #000;
+}
+#branding #s {
+	background-color: #ddd;
+}
+
+
+/* =Menu
+----------------------------------------------- */
+
+#access {
+	background: #CCCCCC; /* Show a solid color for older browsers */
+	background: -moz-linear-gradient(#CCCCCC, #E6E6E6);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#CCCCCC), to(#E6E6E6)); /* older webkit syntax */
+	background: -webkit-linear-gradient(#CCCCCC, #E6E6E6);
+	border-bottom: 1px solid #ddd;
+	border-bottom: 1px solid #bbb;
+    -webkit-box-shadow: rgba(0, 0, 0, 0) 0px 1px 1px;
+    -moz-box-shadow: rgba(0, 0, 0, 0) 0px 1px 1px;
+    box-shadow: rgba(0, 0, 0, 0) 0px 1px 1px;
+}
+
+#access a {
+	color: #222;
+}
+
+/* =Content
+----------------------------------------------- */
+
+
+
+/* =Status
+----------------------------------------------- */
+
+
+
+/* =Quote
+----------------------------------------------- */
+
+
+
+/* =Image
+----------------------------------------------- */
+
+
+
+/* =error404
+----------------------------------------------- */
+
+
+/* =Showcase
+----------------------------------------------- */
+
+
+
+
+/* =Attachments
+----------------------------------------------- */
+
+.image-attachment div.attachment {
+	background: #060606;
+	border-color: #222;
+}
+.image-attachment div.attachment a img {
+	border-color: #060606;
+}
+.image-attachment div.attachment a:focus img,
+.image-attachment div.attachment a:hover img,
+.image-attachment div.attachment a:active img {
+	border-color: #2c2c2c;
+	background: #0f0f0f;
+}
+
+
+/* =Widgets
+----------------------------------------------- */
+
+
+
+
+/* =Comments
+----------------------------------------------- */
+
+
+
+
+/* =Footer
+----------------------------------------------- */
+
+
+
+/* =Print
+----------------------------------------------- */
+
