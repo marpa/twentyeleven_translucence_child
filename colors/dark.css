@@ -50,7 +50,6 @@ input#s {
 a {
 }
 
-
 /* =Header
 ----------------------------------------------- */
 
@@ -95,6 +94,7 @@ a {
 .entry-title {
 	color: #ddd;
 }
+
 .entry-title,
 .entry-title a {
 	color: #ddd;
@@ -105,6 +105,9 @@ a {
 }
 .entry-title {
 	text-shadow: none;
+}
+.entry-title:hover {
+	border-bottom: 1px solid #ffc;
 }
 .entry-meta {
 	color: #999;
@@ -400,6 +403,9 @@ section.recent-posts .other-recent-posts .comments-link a:hover {
 
 /* =Widgets
 ----------------------------------------------- */
+.widget a {
+	color: #ffc;
+}
 
 .widget-title {
 	color: #ccc;
@@ -408,7 +414,8 @@ section.recent-posts .other-recent-posts .comments-link a:hover {
 	color: #191919;
 }
 .widget_pages a:hover {
-	border: 1px dotted #999;
+	border: 1px solid #999;
+	background-color: #191919;
 	text-decoration: none;
 }
 #primary .widget_pages li.current_page_item,
@@ -505,8 +512,14 @@ section.recent-posts .other-recent-posts .comments-link a:hover {
 .pagenav .current_page_item a {
     color: #333333;
 }
+.pagenav .current_page_item a:hover {
+	color: #ccc;
+}
 .pagenav .current_page_item > ul.children a {
     color: #FFC;
+}
+.pagenav .current_page_item > ul.children a:hover {
+	color: #FFC;
 }
 .pagenav a {
     color: #FFC;
