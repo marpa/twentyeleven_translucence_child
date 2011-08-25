@@ -139,6 +139,9 @@ Template: twentyeleven
 .widget a {
 	font-weight: normal;
 }
+li.current_page_item + ul.children {
+	border: 1px solid #999999;
+}
 .widget_pages a {
 	font-weight: normal;
 	text-decoration: none;
@@ -232,8 +235,8 @@ Template: twentyeleven
 .pagenav {
     background-color: #F9F9F9;
     color: #444444;
-    width: 90%;
-    
+    width: 50%;
+    float: left;
     font-size: 12px;
     list-style: none;
     border: 1px solid #CCCCCC;
