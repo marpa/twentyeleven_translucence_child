@@ -214,12 +214,26 @@ function twentyeleven_color_schemes_translucence( $color_schemes ) {
 }
 
 function twentyeleven_enqueue_color_scheme_translucence( $color_scheme ) {
-	if ( 'blue' == $color_scheme ) {
-		wp_enqueue_style( 'blue', get_stylesheet_directory_uri() . '/colors/blue.css', array(), null );
-	} else if ( 'gray-white' == $color_scheme ) {
-		wp_enqueue_style( 'gray-white', get_stylesheet_directory_uri() . '/colors/gray-white.css', array(), null );
-	} else if ( 'white-gray' == $color_scheme ) {
-		wp_enqueue_style( 'white-gray', get_stylesheet_directory_uri() . '/colors/white-gray.css', array(), null );
+	global $twentyeleven_translucence_config;
+	//printpre($color_scheme);
+	if ($twentyeleven_translucence_config['color_scheme'] == "random") {
+		$dark_schemes = explode (",", $twentyeleven_translucence_config['random-dark']);
+		$light_schemes = explode (",", $twentyeleven_translucence_config['random-light']);
+		if (in_array($color_scheme, $dark_schemes)) {
+			$rand_color = array_rand($dark_schemes, 1);
+			$color_scheme = $dark_schemes[$rand_color];
+		} else {
+			$rand_color = array_rand($light_schemes, 1);
+			$color_scheme = $light_schemes[$rand_color];
+		}
+	}
+	
+	$config_color_schemes = $twentyeleven_translucence_config['color_schemes'];		
+	foreach ($config_color_schemes as $config_color_scheme) {
+		if ($config_color_scheme['value'] == $color_scheme) {
+			$color_scheme_css = '/colors/'.$color_scheme.'.css';
+			wp_enqueue_style( $color_scheme, get_stylesheet_directory_uri() . $color_scheme_css, array(), null );
+		}
 	}
 }
 
