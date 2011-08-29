@@ -36,8 +36,9 @@
  * Get the 2011 translucence config.
 */
 
- if (!function_exists('translucence_add_config')) {
+ if (!function_exists('twentyeleven_translucence_add_config')) {
 	function twentyeleven_translucence_add_config() {
+
 	   if (file_exists(dirname(__FILE__).'/config.php')) {
 			require_once('config.php');
 		} else if (file_exists(dirname(__FILE__).'/config-sample.php')) {
@@ -48,6 +49,7 @@
 }
 
 
+$twentyeleven_translucence_config = twentyeleven_translucence_add_config();
 /**
  * add functions that depend on plugins
  */
