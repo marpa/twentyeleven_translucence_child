@@ -670,6 +670,31 @@ li.bypostauthor a.comment-reply-link:active {
 }
 /* =Categories and Tags
 -------------------------------------------------------------- */
+.cat-links a {
+	color: #FFC;
+	background-color: transparent;
+	border: 1px solid #2C2C2C; 
+}
+.cat-links a:hover {
+	background-color: #262626;
+	border: 1px solid #FFC; 
+}
+.widget_categories a:hover {
+	border: 1px solid #FFC;
+}
+.tag-links a { 
+	color: #FFC;
+    background-color: transparent; 
+    border: 1px solid #2C2C2C; 
+}
+.tag-links a:hover { 
+	color: #FFC;
+    background-color: #262626;
+    border: 1px solid #FFC; 
+}
+.tagcloud a:hover {
+	border: 1px solid #FFC;
+}
 
 
 /* End Categories and Tags
