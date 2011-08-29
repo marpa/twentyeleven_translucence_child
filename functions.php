@@ -204,30 +204,10 @@ add_filter( 'twentyeleven_color_schemes', 'twentyeleven_color_schemes_translucen
 add_action( 'twentyeleven_enqueue_color_scheme', 'twentyeleven_enqueue_color_scheme_translucence' );
 
 function twentyeleven_color_schemes_translucence( $color_schemes ) {
-	$color_schemes['blue'] = array(
-		'value' => 'blue',
-		'label' => __( 'Blue', 'twentyeleven' ),
-		'thumbnail' => get_stylesheet_directory_uri() . '/inc/images/blue.png',
-		'default_link_color' => '#003366',
-	);
-	$color_schemes['dark'] = array(
-		'value' => 'dark',
-		'label' => __( 'dark', 'twentyeleven' ),
-		'thumbnail' => get_stylesheet_directory_uri() . '/inc/images/dark.png',
-		'default_link_color' => '#FFC',
-	);
-	$color_schemes['gray-white'] = array(
-		'value' => 'gray-white',
-		'label' => __( 'Gray White', 'twentyeleven' ),
-		'thumbnail' => get_stylesheet_directory_uri() . '/inc/images/gray-white.png',
-		'default_link_color' => '#003366',
-	);
-	$color_schemes['white-gray'] = array(
-		'value' => 'white-gray',
-		'label' => __( 'White Gray', 'twentyeleven' ),
-		'thumbnail' => get_stylesheet_directory_uri() . '/inc/images/white-gray.png',
-		'default_link_color' => '#003366',
-	);	
+	global $twentyeleven_translucence_config;
+	
+ 	$color_schemes = $twentyeleven_translucence_config['color_schemes'];
+	
 	return $color_schemes;
 }
 
