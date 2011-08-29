@@ -49,9 +49,9 @@ body {
 
 #access {
 	background: #CCCCCC; /* Show a solid color for older browsers */
-	background: -moz-linear-gradient(#CCCCCC, #E6E6E6);
-	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#CCCCCC), to(#E6E6E6)); /* older webkit syntax */
-	background: -webkit-linear-gradient(#CCCCCC, #E6E6E6);
+	background: -moz-linear-gradient(#E6E6E6, #CCCCCC);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#E6E6E6), to(#CCCCCC)); /* older webkit syntax */
+	background: -webkit-linear-gradient(#E6E6E6, #CCCCCC);
 	border-bottom: 1px solid #bbb;
     -webkit-box-shadow: rgba(0, 0, 0, 0) 0px 1px 1px;
     -moz-box-shadow: rgba(0, 0, 0, 0) 0px 1px 1px;
