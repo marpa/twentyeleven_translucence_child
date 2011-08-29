@@ -44,12 +44,13 @@
 		} else if (file_exists(dirname(__FILE__).'/config-sample.php')) {
 			require_once('config-sample.php');
 		}
+
 	return $twentyeleven_translucence_config;
 	}
 }
 
-
 $twentyeleven_translucence_config = twentyeleven_translucence_add_config();
+
 /**
  * add functions that depend on plugins
  */
