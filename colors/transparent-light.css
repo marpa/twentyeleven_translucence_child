@@ -114,6 +114,22 @@ body {
 
 /* =Comments
 ----------------------------------------------- */
+/* Comments link */
+.entry-header .comments-link a {
+	background: transparent url(../images/comment-bubble-light-transparent.png) no-repeat;
+	border-color: #222;
+	color: #000;
+}
+.post .entry-header .comments-link a:hover,
+.post .entry-header .comments-link a:focus,
+.post .entry-header .comments-link a:active {
+	background: transparent url(../images/comment-bubble-light-transparent-hover.png) no-repeat;
+	color: #fff;
+	font-weight: bold;
+}
+.rtl .entry-header .comments-link a {
+	background-image: url(../images/comment-bubble-dark-rtl.png);
+}
 
 
 

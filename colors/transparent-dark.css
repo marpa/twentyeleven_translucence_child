@@ -215,11 +215,17 @@ a:active img[class*="wp-image-"] {
 
 /* Comments link */
 .entry-header .comments-link a {
-	background: #282828 url(../images/comment-bubble-dark.png) no-repeat;
+	background: transparent url(../images/comment-bubble-dark-transparent.png) no-repeat;
 	border-color: #222;
-	color: #888;
+	color: #DDD;
 }
-
+.post .entry-header .comments-link a:hover,
+.post .entry-header .comments-link a:focus,
+.post .entry-header .comments-link a:active {
+	background: transparent url(../images/comment-bubble-dark-transparent-hover.png) no-repeat;
+	color: #000;
+	font-weight: bold;
+}
 .rtl .entry-header .comments-link a {
 	background-image: url(../images/comment-bubble-dark-rtl.png);
 }
