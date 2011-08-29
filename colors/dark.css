@@ -215,6 +215,12 @@ a:active img[class*="wp-image-"] {
 	border-color: #222;
 	color: #888;
 }
+.post .entry-header .comments-link a:hover,
+.post .entry-header .comments-link a:focus,
+.post .entry-header .comments-link a:active {
+	color: #000;
+}
+
 
 .rtl .entry-header .comments-link a {
 	background-image: url(../images/comment-bubble-dark-rtl.png);
