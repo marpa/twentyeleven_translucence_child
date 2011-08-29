@@ -241,13 +241,11 @@ li.current_page_item + ul.children {
     background-color: rgba(249, 249, 249, 1);
 }
 .pagenav a, .pagenav a:visited {
-    color: #003366;
     display: block;
     padding: 3px;
     border: 1px solid transparent;
 }
 .pagenav a:hover {
-    color: #003366;
     border: 1px solid #ccc;
     -moz-border-radius: 3px;
     border-radius: 3px;
@@ -281,7 +279,7 @@ li.current_page_item + ul.children {
     border: 1px solid #ccc;
 }
 .pagenav a {
-    color: #003366;
+
 }
 .pagenav .current_page_item a {
     color: #444444;
@@ -296,7 +294,6 @@ li.current_page_item + ul.children {
 }
 .pagenav .current_page_item > ul.children a:hover {
     font-style: normal;
-    color: #003366;
     border: 1px solid #ccc;
 }
 
@@ -321,7 +318,6 @@ li.current_page_item + ul.children {
 }
 .entry-title,
 .entry-title a {
-	color: #036;
 	text-decoration: none;
 	width: 87%;
 	display: block;
