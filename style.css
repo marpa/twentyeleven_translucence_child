@@ -16,19 +16,10 @@ Template: twentyeleven
 
 @import url( ../twentyeleven/style.css );
 
-#site-title {
-	margin-right: 270px;
-	padding: 1em 0 0;
-}
-#site-description {
-	color: #7a7a7a;
-	font-size: 14px;
-	margin: 0 270px 2em 0;
-}
 /* Search Form */
 #branding #searchform {
 	position: absolute;
-	top: 2em;
+	top: 3.8em;
 	right: 7.6%;
 	text-align: right;
 }
