@@ -34,6 +34,11 @@ $twentyeleven_translucence_config['custom_header']['moss-drops']['thumbnail_url'
 $twentyeleven_translucence_config['custom_header']['moss-drops']['description'] = __( 'Moss Drops', '2011-translucence' );
 $twentyeleven_translucence_config['custom_header']['moss-drops']['color_schemes'] = "blue,transparent-light";
 
+$twentyeleven_translucence_config['custom_header']['waves01']['url'] = "$header_dir/images/headers/waves01.jpg";
+$twentyeleven_translucence_config['custom_header']['waves01']['thumbnail_url'] = "$header_dir/images/headers/waves01-thumbnail.jpg";
+$twentyeleven_translucence_config['custom_header']['waves01']['description'] = __( 'Waves', '2011-translucence' );
+$twentyeleven_translucence_config['custom_header']['waves01']['color_schemes'] = "blue,transparent-light,light";
+
 
 /******************************************************************************
  * Color schemes
