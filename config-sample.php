@@ -38,8 +38,9 @@ $twentyeleven_translucence_config['custom_header']['moss-drops']['color_schemes'
 /******************************************************************************
  * Color schemes
  ******************************************************************************/
- 
 $twentyeleven_translucence_config['color_scheme'] = "random1";
+$twentyeleven_translucence_config['random-light'] = "blue,white-gray,gray-white,transparent-light";
+$twentyeleven_translucence_config['random-dark'] = "dark,transparent-dark";
 
 $twentyeleven_translucence_config['color_schemes']['blue']['value'] = 'blue';
 $twentyeleven_translucence_config['color_schemes']['blue']['label'] = __( 'Blue', 'twentyeleven' );
