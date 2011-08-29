@@ -111,7 +111,7 @@ a {
 	text-shadow: none;
 }
 .entry-title:hover {
-	border-bottom: 1px solid #ffc;
+	border-bottom: 1px solid #ccc;
 }
 .entry-meta {
 	color: #999;
@@ -501,32 +501,28 @@ section.recent-posts .other-recent-posts .comments-link a:hover {
 }
 .pagenav {
     background-color: #2C2C2C;
-    color: #FFC;
     border: 1px solid #2C2C2C;
 }
 .pagenav:hover {
     background-color: #2C2C2C;
 }
 .pagenav a, .pagenav a:visited {
-    color: #FFC;
-}
-.pagenav .current_page_item a {
-    color: #333333;
-}
-.pagenav .current_page_item > ul.children a {
-    color: #FFC;
-}
-.pagenav .current_page_item > ul.children a:hover {
-	color: #FFC;
-}
-.pagenav a {
-    color: #FFC;
+
 }
 .pagenav .current_page_item a {
     color: #ccc;
 }
 .pagenav .current_page_item > ul.children a {
-    color: #FFC;
+
+}
+.pagenav .current_page_item > ul.children a:hover {
+
+}
+.pagenav a {
+
+}
+.pagenav .current_page_item > ul.children a {
+
 }
 
 /* End page navigation
@@ -662,22 +658,21 @@ li.bypostauthor a.comment-reply-link:active {
 }
 /* =Categories and Tags
 -------------------------------------------------------------- */
-
-
-/* End Categories and Tags
--------------------------------------------------------------- */
 .cat-links a {
 	color: #FFC;
-	background-color: #262626;
+	background-color: transparent;
 	border: 1px solid #2C2C2C; 
 }
 .cat-links a:hover {
 	background-color: #262626;
 	border: 1px solid #FFC; 
 }
+.widget_categories a:hover {
+	border: 1px solid #FFC;
+}
 .tag-links a { 
 	color: #FFC;
-    background-color: #262626; 
+    background-color: transparent; 
     border: 1px solid #2C2C2C; 
 }
 .tag-links a:hover { 
@@ -685,7 +680,13 @@ li.bypostauthor a.comment-reply-link:active {
     background-color: #262626;
     border: 1px solid #FFC; 
 }
+.tagcloud a:hover {
+	border: 1px solid #FFC;
+}
 
+
+/* End Categories and Tags
+-------------------------------------------------------------- */
 
 /* =Footer
 ----------------------------------------------- */

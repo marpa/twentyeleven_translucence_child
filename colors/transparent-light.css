@@ -22,7 +22,7 @@ body {
 	border-top: 2px solid #fff;
 }
 #site-title a {
-	color: #003366;
+	color: #333;
 }
 #site-title a:hover,
 #site-title a:focus,
@@ -58,7 +58,9 @@ body {
 
 /* =Content
 ----------------------------------------------- */
-
+.entry-title:hover {
+	border-bottom: 1px solid #ccc;
+}
 
 
 /* =Status

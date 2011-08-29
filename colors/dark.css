@@ -107,7 +107,7 @@ a {
 	text-shadow: none;
 }
 .entry-title:hover {
-	border-bottom: 1px solid #ffc;
+	border-bottom: 1px solid #444;
 }
 .entry-meta {
 	color: #999;
@@ -404,7 +404,7 @@ section.recent-posts .other-recent-posts .comments-link a:hover {
 /* =Widgets
 ----------------------------------------------- */
 .widget a {
-	color: #ffc;
+
 }
 
 .widget-title {
@@ -500,14 +500,14 @@ section.recent-posts .other-recent-posts .comments-link a:hover {
 }
 .pagenav {
     background-color: #2C2C2C;
-    color: #FFC;
+
     border: 1px solid #2C2C2C;
 }
 .pagenav:hover {
     background-color: #2C2C2C;
 }
 .pagenav a, .pagenav a:visited {
-    color: #FFC;
+
 }
 .pagenav .current_page_item a {
     color: #333333;
@@ -516,13 +516,13 @@ section.recent-posts .other-recent-posts .comments-link a:hover {
 	color: #ccc;
 }
 .pagenav .current_page_item > ul.children a {
-    color: #FFC;
+
 }
 .pagenav .current_page_item > ul.children a:hover {
-	color: #FFC;
+
 }
 .pagenav a {
-    color: #FFC;
+
 }
 .pagenav .current_page_item a {
     color: #ccc;
