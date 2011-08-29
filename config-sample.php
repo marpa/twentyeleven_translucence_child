@@ -46,7 +46,13 @@ $twentyeleven_translucence_config['color_schemes']['blue']['value'] = 'blue';
 $twentyeleven_translucence_config['color_schemes']['blue']['label'] = __( 'Blue', 'twentyeleven' );
 $twentyeleven_translucence_config['color_schemes']['blue']['thumbnail'] = get_stylesheet_directory_uri() . '/inc/images/blue.png';
 $twentyeleven_translucence_config['color_schemes']['blue']['default_link_color'] = '#003366';
-$twentyeleven_translucence_config['color_schemes']['blue']['custom_header'] = 'moss-drops';
+$twentyeleven_translucence_config['color_schemes']['blue']['custom_header'] = 'moss-drops,waves01';
+
+$twentyeleven_translucence_config['color_schemes']['light']['value'] = 'light';
+$twentyeleven_translucence_config['color_schemes']['light']['label'] = __( 'Light', 'twentyeleven' );
+$twentyeleven_translucence_config['color_schemes']['light']['thumbnail'] = get_stylesheet_directory_uri() . '/inc/images/light.png';
+$twentyeleven_translucence_config['color_schemes']['light']['default_link_color'] = '#003366';
+$twentyeleven_translucence_config['color_schemes']['light']['custom_header'] = 'moss-drops,waves01';
 
 $twentyeleven_translucence_config['color_schemes']['dark']['value'] = 'dark';
 $twentyeleven_translucence_config['color_schemes']['dark']['label'] = __( 'Dark', 'twentyeleven' );
@@ -58,19 +64,19 @@ $twentyeleven_translucence_config['color_schemes']['white-gray']['value'] = 'whi
 $twentyeleven_translucence_config['color_schemes']['white-gray']['label'] = __( 'White Gray', 'twentyeleven' );
 $twentyeleven_translucence_config['color_schemes']['white-gray']['thumbnail'] = get_stylesheet_directory_uri() . '/inc/images/white-gray.png';
 $twentyeleven_translucence_config['color_schemes']['white-gray']['default_link_color'] = '#003366';
-$twentyeleven_translucence_config['color_schemes']['white-gray']['custom_header'] = 'moss-drops';
+$twentyeleven_translucence_config['color_schemes']['white-gray']['custom_header'] = 'moss-drops,waves01';
 
 $twentyeleven_translucence_config['color_schemes']['gray-white']['value'] = 'gray-white';
 $twentyeleven_translucence_config['color_schemes']['gray-white']['label'] = __( 'Gray White', 'twentyeleven' );
 $twentyeleven_translucence_config['color_schemes']['gray-white']['thumbnail'] = get_stylesheet_directory_uri() . '/inc/images/gray-white.png';
 $twentyeleven_translucence_config['color_schemes']['gray-white']['default_link_color'] = '#003366';
-$twentyeleven_translucence_config['color_schemes']['gray-white']['custom_header'] = 'moss-drops';
+$twentyeleven_translucence_config['color_schemes']['gray-white']['custom_header'] = 'moss-drops,waves01';
 
 $twentyeleven_translucence_config['color_schemes']['transparent-light']['value'] = 'transparent-light';
 $twentyeleven_translucence_config['color_schemes']['transparent-light']['label'] = __( 'Transparent Light', 'twentyeleven' );
 $twentyeleven_translucence_config['color_schemes']['transparent-light']['thumbnail'] = get_stylesheet_directory_uri() . '/inc/images/transparent-light.png';
 $twentyeleven_translucence_config['color_schemes']['transparent-light']['default_link_color'] = '#003366';
-$twentyeleven_translucence_config['color_schemes']['transparent-light']['custom_header'] = 'moss-drops';
+$twentyeleven_translucence_config['color_schemes']['transparent-light']['custom_header'] = 'moss-drops,waves01';
 
 $twentyeleven_translucence_config['color_schemes']['transparent-dark']['value'] = 'transparent-dark';
 $twentyeleven_translucence_config['color_schemes']['transparent-dark']['label'] = __( 'Transparent Dark', 'twentyeleven' );
