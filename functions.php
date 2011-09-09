@@ -68,6 +68,7 @@ if (file_exists(dirname(__FILE__).'/functions-plugins.php')) {
  * @since 2011 Translucence 1.0
  */
 function twentyeleven_translucence_setup() {
+
 // 	define( 'HEADER_IMAGE_WIDTH', 950 );
 // 	define( 'HEADER_IMAGE_HEIGHT', 150 );
 }
@@ -287,6 +288,7 @@ function twentyeleven_translucence_default_headers() {
 	//register_default_headers( $twentyeleven_translucence_config['custom_header'] );
 }
 add_action('after_setup_theme', 'twentyeleven_translucence_default_headers', 11);
+
 
  /**
  * Gets author(s) of a given post
