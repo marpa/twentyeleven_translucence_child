@@ -12,18 +12,18 @@ $twentyeleven_translucence_config = array();
  * Custom headers
  ******************************************************************************/
 $header_dir = get_bloginfo('stylesheet_directory');
-$twentyeleven_translucence_config['custom_header']['central-park']['url'] = "$header_dir/images/headers/central-park.jpg";
+$twentyeleven_translucence_config['custom_header']['central-park']['url'] = "$header_dir/images/headers/central-park.gif";
 $twentyeleven_translucence_config['custom_header']['central-park']['thumbnail_url'] = "$header_dir/images/headers/central-park-thumbnail.jpg";
 $twentyeleven_translucence_config['custom_header']['central-park']['description'] = __( 'Central Park', '2011-translucence' );
 $twentyeleven_translucence_config['custom_header']['central-park']['color_schemes'] = "dark,transparent-dark";
 
 
-$twentyeleven_translucence_config['custom_header']['rockefeller-view']['url'] = "$header_dir/images/headers/rockefeller-view.jpg";
+$twentyeleven_translucence_config['custom_header']['rockefeller-view']['url'] = "$header_dir/images/headers/rockefeller-view.gif";
 $twentyeleven_translucence_config['custom_header']['rockefeller-view']['thumbnail_url'] = "$header_dir/images/headers/rockefeller-view-thumbnail.jpg";
 $twentyeleven_translucence_config['custom_header']['rockefeller-view']['description'] = __( 'Rockefeller View', '2011-translucence' );
 $twentyeleven_translucence_config['custom_header']['rockefeller-view']['color_schemes'] = "dark,transparent-dark";
 
-$twentyeleven_translucence_config['custom_header']['paris-nights01']['url'] = "$header_dir/images/headers/paris-nights01.jpg";
+$twentyeleven_translucence_config['custom_header']['paris-nights01']['url'] = "$header_dir/images/headers/paris-nights01.gif";
 $twentyeleven_translucence_config['custom_header']['paris-nights01']['thumbnail_url'] = "$header_dir/images/headers/paris-nights01-thumbnail.jpg";
 $twentyeleven_translucence_config['custom_header']['paris-nights01']['description'] = __( 'Paris Nights01', '2011-translucence' );
 $twentyeleven_translucence_config['custom_header']['paris-nights01']['color_schemes'] = "dark,transparent-dark";
@@ -43,7 +43,7 @@ $twentyeleven_translucence_config['custom_header']['waves01']['color_schemes'] =
 /******************************************************************************
  * Color schemes
  ******************************************************************************/
-$twentyeleven_translucence_config['color_scheme'] = "random1";
+$twentyeleven_translucence_config['color_scheme'] = "random";
 $twentyeleven_translucence_config['random-light'] = "blue,white-gray,gray-white,transparent-light";
 $twentyeleven_translucence_config['random-dark'] = "dark,transparent-dark";
 
