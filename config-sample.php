@@ -43,7 +43,7 @@ $twentyeleven_translucence_config['custom_header']['waves01']['color_schemes'] =
 /******************************************************************************
  * Color schemes
  ******************************************************************************/
-$twentyeleven_translucence_config['color_scheme'] = "random";
+$twentyeleven_translucence_config['color_scheme'] = "random1";
 $twentyeleven_translucence_config['random-light'] = "blue,white-gray,gray-white,transparent-light";
 $twentyeleven_translucence_config['random-dark'] = "dark,transparent-dark";
 
